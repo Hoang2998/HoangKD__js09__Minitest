@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .todoTable{
+        width: 32%;
+        height: 90vh;
+        background-color: aliceblue;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 2px 2px 10px gray;
+        .input__wrapper{
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 2.5rem;
+            font-family: monospace;
+            margin: 1rem;
+        }
+        input{
+            margin: 1rem 0 1rem 1rem;
+            width: 77%;
+            height: 2.5rem;
+            padding: 1rem;
+            outline: none;
+        }
+        .btn__submit{
+            width: 2.5rem;
+            height: 2.5rem;
+            font-family:monospace;
+            font-size: 1.5rem;
+            margin-left: 0.5rem;
+            border: none;
+            background-color: #0093E9;
+            color: aliceblue;
+            transition: 0.5s;
+
+        }
+        .btn__submit:hover{
+            cursor: pointer;
+            font-weight: 800;
+                box-shadow: 2px 2px 10px #0093E9;
+                transition: 0.5s;
+        }
+    }
+    .list{
+        height: 50%;
+        // border: 1px solid gray;
+        margin: 0.5rem 1rem;
+        overflow-x: hidden;
+        .todoItem{
+            background-color: rgb(226, 219, 219);
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            position: relative;
+            transition: 0.5s;
+            cursor: pointer;
+
+            button{
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 1.2rem;
+                padding: 0.28rem;
+                border: none;
+                background-color: rgba(255, 0, 0, 0.5);
+                color: aliceblue;
+                visibility: hidden;
+            }
+            .btn{
+                cursor: pointer;
+                background-color:#0094e9a2;
+                right: 34px;
+            }
+            .btn:hover{
+                background-color: blue;
+                box-shadow: 2px 2px 5px rgb(28, 90, 207);
+            }
+                
+            button:hover{
+                background-color: rgba(255, 0, 0, );
+                box-shadow: 2px 2px 5px red;
+            }
+        }
+        .todoItem:hover{
+            background-color: rgb(206, 199, 199);
+            button{
+                cursor: pointer;
+                transition: 0.5s;
+                visibility: visible;
+            }
+        }
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        font-size: 1.3rem;
+        justify-content: space-between;
+        button{
+            height: 2.5rem; 
+            padding: 0 1rem;
+            font-weight: 600;
+            border: none;
+            background-color: #59c9bc;
+            color: aliceblue;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #49e3d1;
+            box-shadow: 2px 2px 10px #49e3d1;
+            transition: 0.5s;
+        }
+    }
+}
